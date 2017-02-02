@@ -5,7 +5,7 @@ import itertools
 
 
 class Spinner(object):
-    spinner_cycle = itertools.cycle(['-', '/', '|', '\\'])
+    spinner_cycle = itertools.cycle('⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏')
 
     def __init__(self, beep=False, force=False):
         self.beep = beep
