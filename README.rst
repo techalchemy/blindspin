@@ -14,20 +14,23 @@ Example usage::
 
 It looks like this:
 
-insert gif here
+.. image: http://media.kennethreitz.com.s3.amazonaws.com/spinner.gif
 
 Spinner class based on on a [gist by @cevaris](https://gist.github.com/cevaris/79700649f0543584009e).
 
 
-## Install
+Install
+-------
 
-```
-pip install blindspin
-```
+::
+
+    $ pip install blindspin
+
 
 Supports Python 2.7 and 3.
 
-## Based on the work of:
+Based on the work of:
+---------------------
 
 - Yoav Ram (@yoavram)
 - Andreas Maier (@andy-maier)
