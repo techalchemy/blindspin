@@ -13,7 +13,7 @@ if sys.argv[-1] == "publish":
 
 setup(
     name='blindspin',
-    version='0.1.0',
+    version='2.0.0',
     long_description=readme,
     packages=['blindspin'],
     url='https://github.com/kennethreitz/blindspin',
