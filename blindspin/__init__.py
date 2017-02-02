@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 import threading
 import time
@@ -5,7 +7,7 @@ import itertools
 
 
 class Spinner(object):
-    spinner_cycle = itertools.cycle('⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏')
+    spinner_cycle = itertools.cycle(u'⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏')
 
     def __init__(self, beep=False, force=False):
         self.beep = beep
@@ -28,7 +30,7 @@ class Spinner(object):
         while not self.stop_running.is_set():
             sys.stdout.write(next(self.spinner_cycle))
             sys.stdout.flush()
-            time.sleep(0.25)
+            time.sleep(0.07)
             sys.stdout.write('\b')
 
     def __enter__(self):
