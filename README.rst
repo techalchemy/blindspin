@@ -14,7 +14,7 @@ Example usage::
 
 It looks like this:
 
-.. image: http://media.kennethreitz.com.s3.amazonaws.com/spinner.gif
+..image: http://media.kennethreitz.com.s3.amazonaws.com/spinner.gif
 
 Spinner class based on on a [gist by @cevaris](https://gist.github.com/cevaris/79700649f0543584009e).
 
