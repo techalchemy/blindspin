@@ -1,14 +1,19 @@
+import sys
+import os
+
 from setuptools import setup
 
-import versioneer
-
-with open('README.md') as f:
+with open('README.rst') as f:
     readme = f.read()
+
+
+if sys.argv[-1] == "publish":
+    os.system("python setup.py sdist bdist_wheel upload")
+    sys.exit()
 
 setup(
     name='blindspin',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version='0.1.0',
     long_description=readme,
     packages=['blindspin'],
     url='https://github.com/kennethreitz/blindspin',
