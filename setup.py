@@ -6,17 +6,16 @@ with open('README.md') as f:
     readme = f.read()
 
 setup(
-    name='click-spinner',
+    name='blindspin',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     long_description=readme,
-    packages=['click_spinner'],
-    package_data={'click-spinner': ['README.md']},
-    url='https://github.com/click-contrib/click-spinner',
+    packages=['blindspin'],
+    url='https://github.com/kennethreitz/blindspin',
     license='MIT',
-    author='Yoav Ram',
-    author_email='yoav@yoavram.com',
-    description='Spinner for Click',
+    author='Kennethreitz',
+    author_email='me@kennethreitz.org',
+    description='Braille Spinner for Click',
     extras_require={
         'test': [
             'click',
