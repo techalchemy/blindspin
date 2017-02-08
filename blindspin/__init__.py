@@ -28,7 +28,10 @@ class Spinner(object):
 
     def init_spin(self):
         while not self.stop_running.is_set():
-            sys.stdout.write(next(self.spinner_cycle))
+            next_val = next(self.spinner_cycle)
+            if sys.version_info[0] == 2:
+                next_val = next_val.encode('utf-8')
+            sys.stdout.write(next_val)
             sys.stdout.flush()
             time.sleep(0.07)
             sys.stdout.write('\b')
@@ -68,8 +71,3 @@ def spinner(beep=False, force=False):
 
     """
     return Spinner(beep, force)
-
-
-from ._version import get_versions
-__version__ = get_versions()['version']
-del get_versions

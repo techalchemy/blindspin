@@ -27,7 +27,7 @@ Install
     $ pip install blindspin
 
 
-Supports Python 2.7 and 3.
+Supports Python 2.6, 2.7, and 3.
 
 Based on the work of:
 ---------------------
